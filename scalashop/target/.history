@@ -1,8 +1,0 @@
-exit
-compile
-test
-runMain scalashop.VerticalBoxBlurRunner
-test
-runMain scalashop.VerticalBoxBlurRunner
-runMain scalashop.ScalaShop
-submit zixu.zhao.tireless@gmail.com iHsZ1o1Vqij6asZA
