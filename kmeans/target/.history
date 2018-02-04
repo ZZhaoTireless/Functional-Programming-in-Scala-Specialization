@@ -1,0 +1,8 @@
+ls
+compile
+test
+runMain kmeans.KMeansRunner
+run-main kmeans.fun.ScalaShop
+submit zixu.zhao.tireless@gmail.com LwDkuCU6ffEAf9iK
+test
+submit zixu.zhao.tireless@gmail.com LwDkuCU6ffEAf9iK

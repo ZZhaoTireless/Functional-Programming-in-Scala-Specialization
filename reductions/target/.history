@@ -1,0 +1,25 @@
+runMain reductions.ParallelCountChangeRunner
+runMain reductions.ParallelParenthesesBalancingRunner
+test
+runMain reductions.ParallelParenthesesBalancingRunner
+test
+runMain reductions.ParallelParenthesesBalancingRunner
+test
+runMain reductions.ParallelParenthesesBalancingRunner
+test
+runMain reductions.LineOfSightRunner
+test
+runMain reductions.LineOfSightRunner
+submit zixu.zhao.tireless@gmail.com vj3UN76ak6gu1awG
+test
+submi zixu.zhao.tireless@gmail.com cgz39u1N4zFbjdzo
+submit zixu.zhao.tireless@gmail.com cgz39u1N4zFbjdzo
+runMain reductions.ParallelParenthesesBalancingRunner
+submit zixu.zhao.tireless@gmail.com cgz39u1N4zFbjdzo
+test
+submit zixu.zhao.tireless@gmail.com mlWz5nHYDynFWKMw
+test
+submit zixu.zhao.tireless@gmail.com mlWz5nHYDynFWKMw
+test
+submit zixu.zhao.tireless@gmail.com mlWz5nHYDynFWKMw
+exit
