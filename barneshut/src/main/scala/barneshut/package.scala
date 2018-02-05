@@ -63,8 +63,8 @@ package object barneshut {
     val total: Int = nw.total + ne.total + sw.total + se.total
 
     def insert(b: Body): Fork = {
-      if (b.x <= centerX) if (b.y >= centerY) Fork(nw.insert(b), ne, sw, se) else Fork(nw, ne, sw.insert(b), se)
-      else if (b.y >= centerY) Fork(nw, ne.insert(b), sw, se) else Fork(nw, ne, sw, se.insert(b))
+      if (b.x <= centerX) if (b.y <= centerY) Fork(nw.insert(b), ne, sw, se) else Fork(nw, ne, sw.insert(b), se)
+      else if (b.y <= centerY) Fork(nw, ne.insert(b), sw, se) else Fork(nw, ne, sw, se.insert(b))
     }
   }
 
@@ -79,10 +79,10 @@ package object barneshut {
       if (size <= minimumSize) Leaf(centerX, centerY, size, bodies :+ b)
       else (bodies :+ b).foldLeft(
                 Fork(
-                  Empty(centerX - size / 4, centerY + size / 4, size / 2),
-                  Empty(centerX + size / 4, centerY + size / 4, size / 2),
                   Empty(centerX - size / 4, centerY - size / 4, size / 2),
-                  Empty(centerX + size / 4, centerY - size / 4, size / 2))
+                  Empty(centerX + size / 4, centerY - size / 4, size / 2),
+                  Empty(centerX - size / 4, centerY + size / 4, size / 2),
+                  Empty(centerX + size / 4, centerY + size / 4, size / 2))
       )(_.insert(_))
 
   }
